@@ -1,0 +1,36 @@
+---
+title: "w2_R_markdown"
+author: "PJH"
+date: '2021 3 11 '
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown practice
+
+This is a practice for R markdown
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=8, fig.height=8, fig.path='Figs/',
+                       fig.keep='high', warning=FALSE, message=FALSE)
+set.seed(123)
+```
+
+## include option: TRUE
+
+include=TRUE will show results.
+
+```{r, include=TRUE}
+1+1
+```
+
+## include option: FALSE
+
+include=FALSE will not show results.
+
+```{r, include=FALSE}
+1+1
+```
